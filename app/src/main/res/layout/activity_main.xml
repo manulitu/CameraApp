@@ -4,26 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
    <ImageView
        android:id="@+id/image_view"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:layout_centerHorizontal="true"
-       android:layout_above="@+id/button_image"
+       android:layout_above="@+id/button_image"/>
 
-       />
+
        <Button
            android:id="@+id/button_image"
            android:layout_height="48dp"
            android:layout_width="wrap_content"
-           android:layout_alignedParentBottom="image_view"
+           android:layout_alignParentBottom="true"
            android:layout_centerHorizontal="true"
            android:text="Take a picture"
            android:onClick="takePicture"
 
 
        />
+    />
 
 </android.support.constraint.ConstraintLayout>
